@@ -89,8 +89,9 @@ export const pdfGenerator = {
    * Generates a PDF for hotel booking details
    * @param {Object} hotel - Hotel object
    * @param {Object} bookingData - Booking details
+   * @param {Number|String} totalPrice - Total calculated price
    */
-  generateBookingPDF: (hotel, bookingData) => {
+  generateBookingPDF: (hotel, bookingData, totalPrice) => {
     const doc = new jsPDF();
     
     // Header (Blue Theme)
@@ -122,7 +123,7 @@ export const pdfGenerator = {
         ['Guests', bookingData.guests],
         ['Room Type', bookingData.roomType.toUpperCase()],
         ['Bed Type', bookingData.bedType.toUpperCase()],
-        ['Total Price', `₹${hotel.price}`],
+        ['Total Price', `Rs. ${totalPrice ? totalPrice.toLocaleString() : hotel.price}`],
         ['Booking Status', 'CONFIRMED'],
       ],
       headStyles: { fillColor: [37, 99, 235] },

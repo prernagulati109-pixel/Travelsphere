@@ -95,7 +95,7 @@ function HotelsPage() {
       users: '1k+',
       stars: 3,
       badge: '37% off',
-      img: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80' 
+      img: 'https://www.thehosteller.com/_next/image/?url=https%3A%2F%2Fstatic.thehosteller.com%2FHostel%2Fthe-hosteller-delhi%2F13-1674197510548.jpg&w=3840&q=75' 
     },
     { 
       id: 3,
@@ -108,7 +108,7 @@ function HotelsPage() {
       users: '1.2k',
       stars: 5,
       badge: 'Limited Deal',
-      img: 'https://images.unsplash.com/photo-1551882547-ff43c61f1c91?auto=format&fit=crop&w=600&q=80' 
+      img: 'https://cdn.kactus.com/pictures/000/124/774/large/le_meurice_pompadour.jpg?1535121924' 
     },
     { 
       id: 4,
@@ -121,7 +121,7 @@ function HotelsPage() {
       users: '800',
       stars: 5,
       badge: 'Paris Favorite',
-      img: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80' 
+      img: 'https://plaza-athenee-hotel-paris.at-hotels.com/data/Photos/OriginalPhoto/13060/1306025/1306025239.JPEG' 
     },
     { 
       id: 5,

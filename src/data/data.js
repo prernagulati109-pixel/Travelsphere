@@ -1,37 +1,37 @@
 export const destinations = [
   {
     name: 'Paris',
-    image: 'https://images.unsplash.com/photo-1543340713-2ffacc3f36a1?auto=format&fit=crop&w=900&q=80',
+    image: 'https://tse1.mm.bing.net/th/id/OIP.T3X9GnfJFCXt3YqmcerZCgEsDH?pid=Api&P=0&h=180',
     description: 'The City of Light',
     price: '₹45,000'
   },
   {
     name: 'Kyoto',
-    image: 'https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?auto=format&fit=crop&w=900&q=80',
+    image: 'https://loveincorporated.blob.core.windows.net/contentimages/fullsize/a5fd7a31-15d2-420b-9dc4-e534878cc3b3-kyoto-japan.jpg',
     description: 'Ancient Tradition',
     price: '₹38,000'
   },
   {
     name: 'Maldives',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80',
+    image: 'https://www.fodors.com/wp-content/uploads/2019/01/Maldives2.gif',
     description: 'Tropical Paradise',
     price: '₹52,000'
   },
   {
     name: 'New York',
-    image: 'https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=900&q=80',
+    image: 'https://i.pinimg.com/originals/36/85/7b/36857bcd998e7f06297a64f779b81f89.jpg',
     description: 'The Big Apple',
     price: '₹60,000'
   },
   {
     name: 'Tokyo',
-    image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=900&q=80',
+    image: 'https://wallpaperaccess.com/full/19076.jpg',
     description: 'Modern Metropolis',
     price: '₹42,000'
   },
   {
     name: 'Bali',
-    image: 'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=900&q=80',
+    image: 'https://wallpapers.com/images/hd/popular-bali-indonesia-temple-tourist-spot-xrfg2u77kvpyb1e5.jpg',
     description: 'Island Heaven',
     price: '₹25,000'
   },
@@ -90,10 +90,10 @@ export const fullPlaceData = {
     name: 'Paris',
     description: 'The City of Light, known for its art, fashion, gastronomy and culture.',
     longDescription: 'Paris, the capital of France, is one of the most iconic and romantic cities in the world. Known as the "City of Light," Paris enchants visitors with its breathtaking architecture, world-class museums, exquisite cuisine, and vibrant cultural scene. From the Eiffel Tower to the Louvre, from Montmartre to the Seine, every corner of Paris tells a story. The city is a paradise for art lovers, food enthusiasts, and anyone seeking the quintessential European experience.',
-    image: 'https://images.unsplash.com/photo-1543340713-2ffacc3f36a1?auto=format&fit=crop&w=900&q=80',
+    image: 'https://static.vecteezy.com/system/resources/previews/027/002/084/large_2x/aerial-view-of-the-eiffel-tower-at-sunset-paris-france-aerial-panoramic-view-of-paris-with-eiffel-tower-at-sunset-france-ai-generated-free-photo.jpg',
     images: [
-      'https://images.unsplash.com/photo-1543340713-2ffacc3f36a1?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1511739001486-6bfe100c3a05?auto=format&fit=crop&w=900&q=80',
+      'https://static.vecteezy.com/system/resources/previews/027/002/084/large_2x/aerial-view-of-the-eiffel-tower-at-sunset-paris-france-aerial-panoramic-view-of-paris-with-eiffel-tower-at-sunset-france-ai-generated-free-photo.jpg',
+      'https://parisjetaime.com/data/layout_image/2349_vue-de-la-seine-2000x1330-copyright-creatividie-elodie-gutbrod_landscape_3-2_xl.jpg?ver=1736780054',
       'https://images.unsplash.com/photo-1431274172761-fca41d930114?auto=format&fit=crop&w=900&q=80',
       'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=80'
     ],
@@ -114,9 +114,9 @@ export const fullPlaceData = {
         name: 'Eiffel Tower',
         description: 'Iconic iron lattice tower on the Champ de Mars, named after engineer Gustave Eiffel.',
         images: [
-          'https://images.unsplash.com/photo-1511739001486-6bfe100c3a05?auto=format&fit=crop&w=900&q=80',
-          'https://images.unsplash.com/photo-1431274172761-fca41d930114?auto=format&fit=crop&w=900&q=80',
-          'https://images.unsplash.com/photo-1549144511-f099e773c147?auto=format&fit=crop&w=900&q=80'
+          'https://cdn.britannica.com/52/245552-050-3D7334F9/Eiffel-Tower-Paris.jpg',
+          'https://tse4.mm.bing.net/th/id/OIP.m4LgFIkfXjrntWYQPqmhaAHaHa?pid=Api&P=0&h=180',
+          'https://s1.picswalls.com/wallpapers/2016/06/06/awesome-eiffel-tower-wallpaper_094748474_307.jpg'
         ],
         reviews: [
           { user: 'Marc H.', rating: 5, comment: 'The night view with the sparkling lights is unforgettable.' },
@@ -128,8 +128,8 @@ export const fullPlaceData = {
         name: 'Louvre Museum',
         description: 'World\'s largest art museum and a historic monument in Paris, home to the Mona Lisa.',
         images: [
-          'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=80',
-          'https://images.unsplash.com/photo-1565099858564-9ca006815ecb?auto=format&fit=crop&w=900&q=80'
+          'https://www.fodors.com/wp-content/uploads/2019/08/TheLouvre101__HERO_iStock-1137775285.jpg',
+          'https://tse4.mm.bing.net/th/id/OIP.jnDI10qcy0YjJTFbL_7DUQHaD0?pid=Api&P=0&h=180'
         ],
         reviews: [
           { user: 'Chloe L.', rating: 5, comment: 'Infinite collection! You need a week just for this.' }
@@ -140,7 +140,7 @@ export const fullPlaceData = {
         name: 'Notre-Dame Cathedral',
         description: 'Medieval Catholic cathedral on the Île de la Cité, a masterpiece of Gothic architecture.',
         images: [
-          'https://images.unsplash.com/photo-1473615693314-d8302f7468be?auto=format&fit=crop&w=900&q=80'
+          'https://a.cdn-hotels.com/gdcs/production56/d414/88e843e8-e043-4b0f-b101-398d4c4ab7fe.jpg'
         ],
         reviews: [{ user: 'Alex F.', rating: 5, comment: 'Stunning even during restoration.' }],
         tips: ['Visit early morning', 'Check for guided tours']
@@ -151,10 +151,10 @@ export const fullPlaceData = {
     name: 'Kyoto',
     description: 'Ancient capital of Japan, famous for its numerous classical Buddhist temples and gardens.',
     longDescription: 'Kyoto, once the capital of Japan for over a thousand years, is a city where ancient traditions beautifully coexist with modern life. With over 2,000 temples and shrines, stunning bamboo groves, traditional tea houses, and geisha districts, Kyoto offers an unparalleled journey into Japanese culture. The city transforms with each season — cherry blossoms in spring, lush greens in summer, fiery maples in autumn, and serene snow in winter.',
-    image: 'https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?auto=format&fit=crop&w=900&q=80',
+    image: 'https://www.weroad.it/blog/wp-content/uploads/2023/01/kyoto-2.jpg',
     images: [
-      'https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1470737330594-5511005a888c?auto=format&fit=crop&w=900&q=80',
+      'https://www.agoda.com/wp-content/uploads/2024/02/Kyoto-UNESCO-sites-in-Japan.jpg',
+      'https://theloverspassport.com/wp-content/uploads/2024/05/Ginkaku-ji-Temple-in-Kyoto.jpg',
       'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80',
       'https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=900&q=80'
     ],
@@ -173,7 +173,7 @@ export const fullPlaceData = {
       {
         name: 'Fushimi Inari Shrine',
         description: 'Famous for its thousands of vermilion torii gates.',
-        images: ['https://images.unsplash.com/photo-1470737330594-5511005a888c?auto=format&fit=crop&w=900&q=80'],
+        images: ['https://cdn.pixabay.com/photo/2016/08/22/18/52/fushimi-inari-taisha-shrine-1612656_1280.jpg'],
         reviews: [{ user: 'Ken J.', rating: 5, comment: 'A magical hike through the gates.' }],
         tips: ['Go early to avoid crowds', 'Hike to the top for the best view']
       }
@@ -215,9 +215,9 @@ export const fullPlaceData = {
     name: 'New York',
     description: 'The Big Apple, a bustling metropolis known for its iconic landmarks and vibrant culture.',
     longDescription: 'New York City — the city that never sleeps — is a global capital of finance, arts, fashion, and entertainment. From the towering skyscrapers of Manhattan to the brownstones of Brooklyn, from Broadway shows to world-class dining, NYC pulsates with an energy unlike any other city. Whether you are gazing at the Statue of Liberty, walking through Central Park, or catching a show in Times Square, New York offers endless possibilities for adventure.',
-    image: 'https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=900&q=80',
+    image: 'https://wallpaperaccess.com/full/1523519.jpg',
     images: [
-      'https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=900&q=80',
+      'https://wallpaperaccess.com/full/1523519.jpg',
       'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=900&q=80',
       'https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=900&q=80',
       'https://images.unsplash.com/photo-1522083165195-3424ed129620?auto=format&fit=crop&w=900&q=80'
@@ -279,10 +279,10 @@ export const fullPlaceData = {
     name: 'Bali',
     description: 'An Indonesian island paradise known for its beaches, volcanoes, and rich cultural heritage.',
     longDescription: 'Bali, the famed "Island of the Gods," is Indonesia\'s most popular destination and a true tropical wonderland. From the terraced rice paddies of Ubud to the surf breaks of Uluwatu, from sacred water temples to vibrant night markets, Bali blends natural beauty with deep spiritual culture. Whether you seek adventure, relaxation, yoga retreats, or cultural immersion, Bali offers an affordable and enchanting escape that keeps travelers coming back again and again.',
-    image: 'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=900&q=80',
+    image: 'https://wallpaperaccess.com/full/1523519.jpg',
     images: [
-      'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1521342475957-512a9dd573f2?auto=format&fit=crop&w=900&q=80',
+      'https://wallpaperaccess.com/full/1523519.jpg',
+      'https://a.cdn-hotels.com/gdcs/production184/d1837/62041f53-2c38-4027-afa8-a4ca18140aed.jpg?impolicy=fcrop&w=1600&h=1066&q=medium',
       'https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=900&q=80',
       'https://images.unsplash.com/photo-1573790387438-4da905039392?auto=format&fit=crop&w=900&q=80'
     ],
@@ -307,6 +307,7 @@ export const fullPlaceData = {
       }
     ]
   },
+
   Rome: {
     name: 'Rome',
     description: 'The Eternal City, a living museum of ancient history and Renaissance art.',
@@ -407,10 +408,10 @@ export const fullPlaceData = {
     name: 'London',
     description: 'The historic capital of England, a vibrant blend of royal heritage and modern culture.',
     longDescription: 'London, the capital of England and the United Kingdom, is a city where centuries of history meet cutting-edge modernity. From the grandeur of Buckingham Palace and the Tower of London to the trendy markets of Camden and the world-class West End theatre scene, London offers an incredibly rich and diverse experience. With its iconic red buses, legendary pubs, and more than 170 museums, London is a cultural powerhouse that rewards exploration at every turn.',
-    image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=80',
+    image: 'https://wallup.net/wp-content/uploads/2019/09/349171-united-kingdom-rivers-bridges-houses-sky-london-big-ben-cities.jpg',
     images: [
-      'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1529180979161-06b8b6d6f2ab?auto=format&fit=crop&w=900&q=80',
+      'https://wallup.net/wp-content/uploads/2019/09/349171-united-kingdom-rivers-bridges-houses-sky-london-big-ben-cities.jpg',
+      'https://res.cloudinary.com/djcyhbk2e/image/upload/c_scale,f_auto,q_35,w_1400/v1/gvv/prod/zxvtpnk9w62on9nibcsm',
       'https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&w=900&q=80',
       'https://images.unsplash.com/photo-1520986606214-8b456906c813?auto=format&fit=crop&w=900&q=80'
     ],
@@ -444,7 +445,7 @@ export const fullPlaceData = {
       'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=80',
       'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=900&q=80',
       'https://images.unsplash.com/photo-1528072164453-f4e8ef0d475a?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1549180030-48bf079b7988?auto=format&fit=crop&w=900&q=80'
+      'https://assets.atdw-online.com.au/images/f02b494fbd4668b3fa38e2131475c1bb.jpeg?rect=209'
     ],
     mapLat: -33.8688,
     mapLng: 151.2093,
@@ -508,7 +509,7 @@ export const fullPlaceData = {
       'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=900&q=80',
       'https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?auto=format&fit=crop&w=900&q=80',
       'https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1558383621-c7e9a61ec417?auto=format&fit=crop&w=900&q=80'
+      'https://tse3.mm.bing.net/th/id/OIP.vTha60iid9NI4jz5iWrpIQHaE8?pid=Api&P=0&h=180'
     ],
     mapLat: 41.0082,
     mapLng: 28.9784,

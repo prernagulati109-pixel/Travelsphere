@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from 'react';
+import { useMemo, useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import Navbar from '../components/Navbar';
@@ -67,6 +67,33 @@ const heroImages = [
 function HomePage() {
   const [search, setSearch] = useState('');
   const [currentSlide, setCurrentSlide] = useState(0);
+  const carouselRef = useRef(null);
+
+  const scrollPrev = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+  };
+
+  const scrollNext = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+  };
+  const [activeDot, setActiveDot] = useState(0);
+
+  const handleScroll = () => {
+    if (carouselRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+      const maxScrollLeft = scrollWidth - clientWidth;
+      if (maxScrollLeft > 0) {
+        // Assume 5 dots max
+        const scrollProgress = scrollLeft / maxScrollLeft;
+        const currentDot = Math.min(Math.round(scrollProgress * 5), 5);
+        setActiveDot(currentDot);
+      }
+    }
+  };
   const [realDestinations, setRealDestinations] = useState([]);
   const [loading, setLoading] = useState(false);
   const { user, isLoggedIn } = useAuth();
@@ -109,6 +136,12 @@ function HomePage() {
       'Travel Options': '/travel',
       'Plan Itinerary': '/itinerary',
       'User Reviews': '#testimonials',
+      
+      // Reasons
+      'Smart Itinerary': '/itinerary',
+      'Real-time Maps': '/explore',
+      'Best Hotel Deals': '/hotels',
+      'Budget Tracking': '/explore'
     };
     if (routes[title]) {
       if (routes[title].startsWith('#')) {
@@ -168,23 +201,38 @@ function HomePage() {
         </section>
 
         <section className="section destinations" id="hotels">
-          <div className="section-heading">
-            <h3>Popular Destinations {loading && <span className="loader-inline">...</span>}</h3>
+          <div className="section-heading centered">
+            <h3>Top Destinations {loading && <span className="loader-inline">...</span>}</h3>
+            <p>Explore the most beautiful places around the world</p>
           </div>
-          <div className="dest-grid">
-            {filteredDestinations.map((destination) => (
-              <Link key={destination.name} to={`/place/${destination.name}`} className="dest-card-link">
-                <div className="dest-card">
-                  <img src={destination.image} alt={destination.name} />
-                  <div className="dest-label">{destination.name}</div>
-                </div>
-              </Link>
-            ))}
-            {filteredDestinations.length === 0 && (
-              <div className="no-results">
-                <p>No destinations found matching "{search}"</p>
+          <div className="carousel-container-box">
+            <button className="carousel-btn prev" onClick={scrollPrev}>‹</button>
+            <div className="dest-carousel-wrapper">
+              <div className="dest-carousel" ref={carouselRef} onScroll={handleScroll}>
+                {filteredDestinations.map((destination) => (
+                  <Link key={destination.name} to={`/place/${destination.name}`} className="dest-card-link">
+                    <div className="dest-card">
+                      <img src={destination.image} alt={destination.name} />
+                      <div className="dest-label">{destination.name}</div>
+                    </div>
+                  </Link>
+                ))}
+                {filteredDestinations.length === 0 && (
+                  <div className="no-results">
+                    <p>No destinations found matching "{search}"</p>
+                  </div>
+                )}
               </div>
-            )}
+            </div>
+            <button className="carousel-btn next" onClick={scrollNext}>›</button>
+            <div className="carousel-dots">
+              {[0, 1, 2, 3, 4, 5].map(idx => (
+                <span 
+                  key={idx} 
+                  className={`dot ${activeDot === idx ? 'active' : ''}`}
+                ></span>
+              ))}
+            </div>
           </div>
         </section>
       
@@ -193,10 +241,14 @@ function HomePage() {
           <h3>Why Choose TravelSphere?</h3>
           <div className="reasons-grid">
             {reasons.map((reason) => (
-              <div key={reason.title} className="reason-card">
+              <button 
+                key={reason.title} 
+                className="reason-card"
+                onClick={() => handleFeatureClick(reason.title)}
+              >
                 <div className="reason-icon">{reason.icon}</div>
                 <p>{reason.title}</p>
-              </div>
+              </button>
             ))}
           </div>
         </section>

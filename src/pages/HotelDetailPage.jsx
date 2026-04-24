@@ -349,7 +349,7 @@ function HotelDetailPage() {
 
   const handleDownloadBookingPDF = () => {
     if (hotel && bookingData.checkIn && bookingData.checkOut) {
-      pdfGenerator.generateBookingPDF(hotel, bookingData);
+      pdfGenerator.generateBookingPDF(hotel, bookingData, totalPrice);
     } else {
       alert('Please select check-in and check-out dates first.');
     }
@@ -560,36 +560,24 @@ function HotelDetailPage() {
                 </div>
               </div>
 
-              <button
-                className="hotel-book-now-btn"
-                onClick={handleBookingSubmit}
-                disabled={!bookingData.checkIn || !bookingData.checkOut}
-              >
-                Confirm Booking
-              </button>
-              
-              <button 
-                className="download-summary-btn"
-                onClick={handleDownloadBookingPDF}
-                style={{
-                  width: '100%',
-                  marginTop: '12px',
-                  padding: '12px',
-                  borderRadius: '12px',
-                  border: '1px solid #e2e8f0',
-                  background: 'white',
-                  color: '#475569',
-                  fontWeight: '600',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '8px',
-                  cursor: 'pointer'
-                }}
-              >
-                <span style={{ fontSize: '1.1rem' }}>📄</span>
-                Download Booking Summary
-              </button>
+              <div className="booking-actions" style={{ display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center', marginTop: '24px' }}>
+                <button
+                  className="hotel-book-now-btn"
+                  onClick={handleBookingSubmit}
+                  disabled={!bookingData.checkIn || !bookingData.checkOut}
+                >
+                  Confirm Booking
+                </button>
+                
+                <button 
+                  className="download-summary-btn"
+                  onClick={handleDownloadBookingPDF}
+                  disabled={!bookingData.checkIn || !bookingData.checkOut}
+                >
+                  <span className="icon">📄</span>
+                  Download Booking Summary
+                </button>
+              </div>
             </div>
           </div>
         </div>
